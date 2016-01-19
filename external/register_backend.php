@@ -87,16 +87,12 @@ if(!loggedin()){
                             $stmt3->bindParam(':email', $email);
                             $stmt3->bindParam(':password_hashed', $password_hashed);
 
-                            echo 'gfd';
-
 
                             if ($query_run = $stmt3->execute()) {
 
                                 $stmt4 = $db->prepare("SELECT `id` AS `id` FROM `users` WHERE `username`=:username");
 
                                 $stmt4->bindParam(':username', $username);
-
-                                echo 'failed at stmt4';
 
                                 if (!$id_query_run = $stmt4->execute()) {
 
@@ -105,7 +101,6 @@ if(!loggedin()){
                                 } else {
                                     $user_id = $stmt4->fetch(PDO::FETCH_ASSOC);
                                     $_SESSION['user_id'] = $user_id['id'];
-                                    echo 'user_id session made';
                                 }
                                 header('Location: home.php');
                             } else {
@@ -134,3 +129,6 @@ if(!loggedin()){
     die();
 };
 ?>
+
+<!-- Check if the user has inputted all the relevant data and then proceed to put it in the database. Do form verification to make sure passwords match, username dosn't exist, and lengths of inputs
+are correct. -->

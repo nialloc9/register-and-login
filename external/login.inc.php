@@ -40,3 +40,5 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     }
 }
 ?>
+
+<!-- Connect to the database and get the users id from the database where the id matches the password and username provided. Then create a session and put the user id in it. After redirect. -->
