@@ -1,5 +1,9 @@
 /* Custom stlying sheet */
 
+body {
+    padding-top: 70px;
+}
+
 .description{
     padding-left: 50px;
     padding-top: 150px;
