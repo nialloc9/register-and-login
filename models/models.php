@@ -8,8 +8,8 @@
             </div>
             <div class="modal-body">
                 <form action ="<?php echo $current_file;?>" method="post">
-                    <p>Username: <input type='text' name='username'/></p>
-                    <p>Password: <input type='password' name='password'/></p><br>
+                    <p>Username: <input type='text' name='username' placeholder="username" value=""/></p>
+                    <p>Password: <input type='password' name='password' placeholder="password"/></p><br>
 
                     <p><button type="submit" class="btn btn-success">Log in</button></p>
             </div>
