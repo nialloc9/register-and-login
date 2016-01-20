@@ -6,6 +6,7 @@
     <?php require_once 'external/header_loggedin.php'; ?>
 </head>
 <body>
-    <p>You are now logged into the website. Use the logout button to leave. Have a good day.</p>
+<hr>
+    <p class="description">You are now logged into the website.<br> Use the logout button to leave.<br> Have a good day.</p><br><hr>
 </body>
 </html>
