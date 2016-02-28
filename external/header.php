@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Header main page(not logged in)</title>
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
 
